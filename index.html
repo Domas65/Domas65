@@ -6,56 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MyResume</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
+ 
   </head>
   <body>
+    <header class="header">
+      <div class="logo">
+          <img src="Image/logo.png" alt="Puslapio logotipas">
+      </div>
+      <nav class="nav">
+          <ul class="nav-list">
+              <li><a href="#Apie">Apie</a></li>
+              <li><a href="#Aprašymas">Aprašymas</a></li>
+              <li><a href="#Atlikti darbai">Atlikti darbai</a></li>
+              <li><a href="#Paslaugos">Paslaugos</a></li>
+          </ul>
+      </nav>
+    </header>
+    <button id="scroll-to-top" title="Grįžti į viršų">↑</button>
     <main>
-        <h1>Domas Stagniūnas</h1>  
-          <p>
-            <label>Vilnius Tech universiteto studentas</label><br>
-            <img src="Image/462536760.jpg" alt="Description of the image">
-          </p>
+      <fieldset>
+      <h1>Domas Stagniūnas</h1>
+      <h2>Vilnius Tech universiteto studentas</h2>
+      </fieldset>
         
-
-        <h2>Apie</h2>
-          <p>Gimimo diena: 2004-09-05</p>
-        <h2>Atlikti darbai</h2>
-          <p>Namų darbai</p>
+      <img class="profile-img" src="Image/462536760.jpg" alt="Description of the image">
         
-        <h2>Aprašymas</h2>
-          <h3>Išsilavinimas</h3>
-          <p>Vilnius Tech universiteto Automatikos studentas</p>
+      
 
-        <h2>Atlikti darbai</h2>
-          <h3>Blender 3d modeliai</h3>
-            <img src="Image/Screenshot 2024-11-15 131158.png" alt="Description of the image">
-            <img src="Image/Screenshot 2024-11-15 131047.png" alt="Description of the image">
-            <img src="Image/Screenshot 2024-11-15 131034.png" alt="Description of the image">
+      <h2 id="Apie">Apie</h2>
+        <p>Gimimo diena: 2004-09-05</p>
+      <h2>Atlikti darbai</h2>
+        <p>Namų darbai</p>
+      
+      <h2 id="Aprašymas">Aprašymas</h2>
+        <h3>Išsilavinimas</h3>
+        <p>Vilnius Tech universiteto Automatikos studentas</p>
 
-        <h2>Paslaugos</h2>
-        <legend>Video, iframe</legend><br>
-        <iframe 
-          width="560" 
-          height="315" 
-          src="https://www.youtube.com/embed/6ds7yArtzwY?si=zTJM9wPEr47OxgmX" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen>
-        </iframe><br>
-        <legend>Video, video</legend><br>
-        <video controls width="640" height="360">
-          <source src="Video/466900464.mp4" type="video/mp4">
-        </video><br>
-        <legend>Audio</legend><br>
-        <audio controls>
-          <source src="Audio/Pokemon Ruby⧸Sapphire⧸Emerald- Littleroot Town.mp3" type="audio/mpeg">
-        </audio>
+      <h2 id="Atlikti darbai">Atlikti darbai</h2>
+        <h3>Blender 3d modeliai</h3>
+        <section>
+          <div class="grid-container">
+            <div class="grid-item"><img src="Image/Screenshot 2024-11-15 131158.png" alt="Item 1"></div>
+            <div class="grid-item"><img src="Image/Screenshot 2024-11-15 131047.png" alt="Item 2"></div>
+            <div class="grid-item"><img src="Image/Screenshot 2024-11-15 131034.png" alt="Item 3"></div>
+            <div class="grid-item"><img src="image4.jpg" alt="Item 4"></div>
+            <div class="grid-item"><img src="image5.jpg" alt="Item 5"></div>
+            <div class="grid-item"><img src="image6.jpg" alt="Item 6"></div>
+            <div class="grid-item"><img src="image7.jpg" alt="Item 7"></div>
+            <div class="grid-item"><img src="image8.jpg" alt="Item 8"></div>
+            <div class="grid-item"><img src="image9.jpg" alt="Item 9"></div>
+          </div>
+        </section>
+        <h2 id="Paslaugos">Paslaugos</h2>
+        <section> 
+          <legend>Video, iframe</legend><br>
+            <iframe 
+              width="560" 
+              height="315" 
+              src="https://www.youtube.com/embed/6ds7yArtzwY?si=zTJM9wPEr47OxgmX" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" 
+              allowfullscreen>
+            </iframe><br>
+
+          <legend>Video, video</legend><br>
+            <video controls width="640" height="360">
+              <source src="Video/466900464.mp4" type="video/mp4">
+            </video><br>
+          <legend>Audio</legend><br>
+            <audio controls>
+              <source src="Audio/Pokemon Ruby⧸Sapphire⧸Emerald- Littleroot Town.mp3" type="audio/mpeg">
+            </audio><br>
+        </section>
+      <button id="theme-toggle">Šviesus/Tamsus režimas</button>
+      
       
 
     </main>
+    <script src="js/functions.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
