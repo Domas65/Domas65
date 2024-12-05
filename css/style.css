@@ -7,18 +7,14 @@ h2 {
     font-family: "Georgia", serif;
     font-size: 24px;
     font-weight: bold;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+
 }
 p {
     font-family: "Arial", sans-serif;
     font-size: 16px;
     font-weight: normal;
-}
-.profile-img {
-    max-width: 50%;
-    height: 300px;
-    background-image: url('image.jpg');
-    display: flex;
-    justify-content: center;
 }
 
 fieldset {
@@ -26,6 +22,8 @@ fieldset {
     margin: 0 auto; /* Horizontally centers the block */
     text-align: center;
     padding: 20px;
+    border: 5px solid;
+    border-radius: 10px;
 
 }
 :root {
@@ -46,7 +44,12 @@ body {
     color: var(--text-color);
     transition: background-color 0.3s, color 0.3s;
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stacks header, main content, and footer */
+    justify-content: center; /* Center the main content */
 }
 
 button {
@@ -73,10 +76,19 @@ section {
     padding: 10px;
     width: 1000px;    
 
-    
     justify-content: center;
 
 }
+.media {
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center;    /* Centers items horizontally */
+    text-align: center;     /* Centers text like legends */
+}
+iframe, video, audio {
+    margin: 10px 0; /* Adds spacing between items */
+  }
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
@@ -105,6 +117,7 @@ section {
     padding: 10px 20px;
     background-color: #333;
     color: white;
+    margin-bottom: 100px;
 }
 .logo img {
     height: 60px;
@@ -114,14 +127,14 @@ section {
 
 }
 .nav-list {
-    list-style: none;
     display: flex;
-    margin: 0;
+    justify-content: space-around;
+    list-style: none;
     padding: 0;
     
 }
 .nav-list li {
-    margin-left: 20px;
+    padding: 10px;
 }
 
 .nav-list a {
@@ -178,3 +191,169 @@ html {
     top: 0px;
     right: 0px;
 }*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%; /* Ensures the footer spans the entire screen width */
+    position: relative; /* Ensures footer stays at the bottom of the content */
+    margin-top: 20px;
+}
+
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+  }
+  .footer-links li {
+    display: inline;
+    margin: 0 10px;
+  }
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+
+  main {
+    flex-grow: 1; /* Allows the main content to grow and push footer to the bottom */
+    display: grid;
+    place-items: center; /* Center content inside the main area */
+}
+footer .social-links {
+    margin-bottom: 20px; /* Space between icons and footer text */
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+footer .social-links i {
+    text-decoration: none;
+    font-size: 50px; /* Icon size */
+    color: white;
+    margin: 0 10px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+footer .social-links a:hover i {
+    transform: scale(1.2);
+    color: #f0a500; /* Optional hover color */
+    text-decoration: none;
+}
+footer .social-links a {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Inherit color from parent */
+    display: inline-block; /* Ensures proper alignment with icons */
+    margin: 0 10px; /* Adds spacing between links */
+}
+.about-section {
+    margin-top: 100px;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .about-section h2 {
+    font-family: "Georgia", serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .about-section p {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .about-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-details {
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .about-details h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .about-details p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .about-info {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  
+  .about-info li {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .about-info strong {
+    color: #000;
+  }
+  .clock {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    margin-bottom: 200px;
+  }
+.laikas {
+    margin-top: 100px;
+}
+@media (max-width: 768px) {
+    .logo-image {
+      max-width: 80%;  /* Make the logo smaller on smaller screens */
+    }
+    
+    .about-container {
+      flex-direction: column;  /* Stack elements vertically on mobile */
+    }
+    
+    .about-info {
+      font-size: 14px;  /* Reduce font size for mobile devices */
+    }
+  
+    .grid-container {
+      grid-template-columns: 1fr;  /* Make grid items stack vertically on smaller screens */
+    }
+  
+    .clock {
+      font-size: 1.5em;  /* Make clock text bigger on mobile */
+    }
+  }

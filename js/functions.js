@@ -8,9 +8,9 @@ themeToggleButton.addEventListener('click', () => {
 
     // Keisti mygtuko tekstą
     if (body.classList.contains('dark-theme')) {
-        themeToggleButton.textContent = 'Šviesus režimas';
+        themeToggleButton.textContent = 'Dark';
     } else {
-        themeToggleButton.textContent = 'Tamsus režimas';
+        themeToggleButton.textContent = 'Light';
     }
 });
 

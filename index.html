@@ -13,7 +13,7 @@
   <body>
     <header class="header">
       <div class="logo">
-          <img src="Image/logo.png" alt="Puslapio logotipas">
+        <img src="Image/logo.png" alt="Puslapio logotipas" class="logo-image">
       </div>
       <nav class="nav">
           <ul class="nav-list">
@@ -23,6 +23,7 @@
               <li><a href="#Paslaugos">Paslaugos</a></li>
           </ul>
       </nav>
+      <button id="theme-toggle">Dark/Light</button>
     </header>
     <button id="scroll-to-top" title="Grįžti į viršų">↑</button>
     <main>
@@ -31,15 +32,32 @@
       <h2>Vilnius Tech universiteto studentas</h2>
       </fieldset>
         
-      <img class="profile-img" src="Image/462536760.jpg" alt="Description of the image">
+      
+        <section id="Apie" class="about-section">
+          <h2>Apie</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.</p>
+          <div class="about-container">
+            <div class="about-image">
+              <img src="Image/462536760.jpg" alt="Profile Photo" class="about-photo">
+            </div>
+            <div class="about-details">
+              <h3>UI/UX Designer & Web Developer</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <ul class="about-info">
+                <li><strong>Birthday:</strong> 1 May 1995</li>
+                <li><strong>Website:</strong> www.example.com</li>
+                <li><strong>Phone:</strong> +123 456 7890</li>
+                <li><strong>City:</strong> New York, USA</li>
+                <li><strong>Age:</strong> 30</li>
+                <li><strong>Degree:</strong> Master</li>
+                <li><strong>Email:</strong> email@example.com</li>
+                <li><strong>Freelance:</strong> Available</li>
+              </ul>
+              <p>Officiis eligendi itaque labore et dolorem mollitia officia optio vero. Quisquam sunt adipisci omnis et ut.</p>
+            </div>
+          </div>
+        </section>
         
-      
-
-      <h2 id="Apie">Apie</h2>
-        <p>Gimimo diena: 2004-09-05</p>
-      <h2>Atlikti darbai</h2>
-        <p>Namų darbai</p>
-      
       <h2 id="Aprašymas">Aprašymas</h2>
         <h3>Išsilavinimas</h3>
         <p>Vilnius Tech universiteto Automatikos studentas</p>
@@ -51,16 +69,13 @@
             <div class="grid-item"><img src="Image/Screenshot 2024-11-15 131158.png" alt="Item 1"></div>
             <div class="grid-item"><img src="Image/Screenshot 2024-11-15 131047.png" alt="Item 2"></div>
             <div class="grid-item"><img src="Image/Screenshot 2024-11-15 131034.png" alt="Item 3"></div>
-            <div class="grid-item"><img src="image4.jpg" alt="Item 4"></div>
-            <div class="grid-item"><img src="image5.jpg" alt="Item 5"></div>
-            <div class="grid-item"><img src="image6.jpg" alt="Item 6"></div>
-            <div class="grid-item"><img src="image7.jpg" alt="Item 7"></div>
-            <div class="grid-item"><img src="image8.jpg" alt="Item 8"></div>
-            <div class="grid-item"><img src="image9.jpg" alt="Item 9"></div>
+            <div class="grid-item"><img src="Image/Screenshot 2024-12-05 180432.png" alt="Item 4"></div>
+            <div class="grid-item"><img src="Image/Screenshot 2024-12-05 180210.png" alt="Item 5"></div>
+            <div class="grid-item"><img src="Image/Screenshot 2024-12-05 180646.png" alt="Item 6"></div>
           </div>
         </section>
         <h2 id="Paslaugos">Paslaugos</h2>
-        <section> 
+        <section class="media"> 
           <legend>Video, iframe</legend><br>
             <iframe 
               width="560" 
@@ -74,7 +89,7 @@
             </iframe><br>
 
           <legend>Video, video</legend><br>
-            <video controls width="640" height="360">
+            <video controls width="300" height="360">
               <source src="Video/466900464.mp4" type="video/mp4">
             </video><br>
           <legend>Audio</legend><br>
@@ -82,7 +97,95 @@
               <source src="Audio/Pokemon Ruby⧸Sapphire⧸Emerald- Littleroot Town.mp3" type="audio/mpeg">
             </audio><br>
         </section>
-      <button id="theme-toggle">Šviesus/Tamsus režimas</button>
+      
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+      <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="80" stroke="black" stroke-width="4" fill="lightblue" />
+        <text x="100" y="100" font-size="15" text-anchor="middle" fill="black">Matematinė formulė</text>
+      </svg>
+      <section>
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mfrac>
+          <mn>1</mn>
+          <mrow>
+            <mn>2</mn>
+            <mi>π</mi>
+            <mi>i</mi>
+          </mrow>
+        </mfrac>
+        <msubsup>
+          <mo>∮</mo>
+          <mi>z</mi>
+          <mi>a</mi>
+        </msubsup>
+        <mfrac>
+          <mi>f</mi>
+          <mrow>
+            <mi>z</mi>
+            <mo>−</mo>
+            <mi>a</mi>
+          </mrow>
+        </mfrac>
+        <mi>dz</mi>
+      </math>
+    </section>
+
+    <h2 class="laikas">Laikas</h2>
+    <div class="clock" id="clock">00:00:00</div>
+
+    <script>
+      // Funkcija, kuri grąžina dabartinį laiką formatu "hh:mm:ss"
+      function getCurrentTime() {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const seconds = String(now.getSeconds()).padStart(2, '0');
+        return `${hours}:${minutes}:${seconds}`;
+      }
+  
+      // Funkcija, kuri atnaujina laikrodžio elementą
+      function updateClock() {
+        const clockElement = document.getElementById('clock');
+        clockElement.textContent = getCurrentTime();
+      }
+  
+      // Paleidžiame laikrodį, atnaujinant kas sekundę
+      setInterval(updateClock, 1000);
+  
+      // Iš karto parodome laiką įkrovus puslapį
+      updateClock();
+    </script>
+
+      <footer>
+        <div class="footer-content">
+          <p>&copy; My contact information</p>
+          <ul class="footer-links">
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="mailto:domasstagniunas@stud.vilniustech.lt">domasstagniunas@stud.vilniustech.lt</a></li>
+            <li><a> Domas Stagniūnas </a></li>
+            </ul>
+          </div>
+          <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/domas-stagniūnas-086b11337" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+      </footer>
       
       
 
