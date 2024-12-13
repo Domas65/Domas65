@@ -357,3 +357,48 @@ footer .social-links a {
       font-size: 1.5em;  /* Make clock text bigger on mobile */
     }
   }
+  form {
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea, input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+
+.output {
+    margin-top: 20px;
+}
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+
+.output p {
+  margin: 0.5em 0;
+}
+
+.average.green {
+  color: green;
+}
+
+.average.orange {
+  color: orange;
+}
+
+.average.red {
+  color: red;
+}
